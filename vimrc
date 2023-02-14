@@ -1,3 +1,11 @@
+set nocp
+set nocompatible
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set textwidth=80
+
 "set number              " Affiche les numéros de lignes
 syntax on               " Active la coloration syntaxique
 set history=100         " Définit le nombre de commandes enregistres dans l'historique
@@ -20,3 +28,11 @@ set cursorline          " Met en surbrillance la ligne sur laquelle est le curse
 highlight CursorLine guibg=#001000      " Définit la couleur*
  
 set background=dark     " Pour afficher de manière visible les commentaires
+
+autocmd Filetype python set tabstop=8
+autocmd Filetype python set shiftwidth=4
+autocmd Filetype python set textwidth=79
+autocmd Filetype python set softtabstop=4
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+
+
